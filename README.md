@@ -1,2 +1,1 @@
-# stupidfetch
-stupid fetch thing for linux
+coming soon to the rubbish bin™
