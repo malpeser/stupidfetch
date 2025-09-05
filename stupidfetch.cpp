@@ -74,7 +74,7 @@ int main(int argc, char* argv[]) {
     {
         if (ar(argv[1]) == "-v" || ar(argv[1]) == "--version")
         {
-            std::cout << "stupidfetch v1.1" << std::endl <<
+            std::cout << "stupidfetch v1.1.1" << std::endl <<
             "by Halved :3" << std::endl;
             return 0;
         }
@@ -87,6 +87,7 @@ int main(int argc, char* argv[]) {
             std::cout <<BOLD<< "  -v, --version"<<RESET<<"                               Show the currently installed version of stupidfetch." << std::endl;
             std::cout <<BOLD<< "  -c, --config"<<RESET<<"                                Use a different config file than the default one." << std::endl;
             std::cout << "                                              By default uses the configuration file at $HOME/stupidfetch/default.conf" << std::endl;
+            return 0;
         }
         if (ar(argv[1]) == "-c" || ar(argv[1]) == "--config")
         {
