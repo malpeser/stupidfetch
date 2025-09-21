@@ -1,0 +1,356 @@
+		"Red Hat Enterprise Linux")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light red') # Light Red
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			startline="0"
+			logowidth="42"
+			fulloutput=(
+"${c1}            .MMM..:MMMMMMM                 %s"
+"${c1}           MMMMMMMMMMMMMMMMMM              %s"
+"${c1}           MMMMMMMMMMMMMMMMMMMM.           %s"
+"${c1}          MMMMMMMMMMMMMMMMMMMMMM           %s"
+"${c1}         ,MMMMMMMMMMMMMMMMMMMMMM:          %s"
+"${c1}         MMMMMMMMMMMMMMMMMMMMMMMM          %s"
+"${c1}   .MMMM'  MMMMMMMMMMMMMMMMMMMMMM          %s"
+"${c1}  MMMMMM    \`MMMMMMMMMMMMMMMMMMMM.         %s"
+"${c1} MMMMMMMM      MMMMMMMMMMMMMMMMMM .        %s"
+"${c1} MMMMMMMMM.       \`MMMMMMMMMMMMM' MM.      %s"
+"${c1} MMMMMMMMMMM.                     MMMM     %s"
+"${c1} \`MMMMMMMMMMMMM.                 ,MMMMM.   %s"
+"${c1}  \`MMMMMMMMMMMMMMMMM.          ,MMMMMMMM.  %s"
+"${c1}     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  %s"
+"${c1}       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:  %s"
+"${c1}          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM   %s"
+"${c1}             \`MMMMMMMMMMMMMMMMMMMMMMMM:    %s"
+"${c1}                 \`\`MMMMMMMMMMMMMMMMM'      %s")
+		;;
+
+
+
+		"Manjaro")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light green') # Green
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			startline="1"
+			logowidth="33"
+			fulloutput=(""
+"${c1} ██████████████████  ████████    %s"
+"${c1} ██████████████████  ████████    %s"
+"${c1} ██████████████████  ████████    %s"
+"${c1} ██████████████████  ████████    %s"
+"${c1} ████████            ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"${c1} ████████  ████████  ████████    %s"
+"                                 %s")
+		;;
+
+		"Kali Linux")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light blue') # White
+				c2=$(getColor 'black') # Light Red
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="1"
+			logowidth="48"
+			fulloutput=(
+"${c1}..............                                  "
+"${c1}            ..,;:ccc,.                          %s"
+"${c1}          ......''';lxO.                        %s"
+"${c1}.....''''..........,:ld;                        %s"
+"${c1}           .';;;:::;,,.x,                       %s"
+"${c1}      ..'''.            0Xxoc:,.  ...           %s"
+"${c1}  ....                ,ONkc;,;cokOdc',.         %s"
+"${c1} .                   OMo           ':${c2}dd${c1}o.       %s"
+"${c1}                    dMc               :OO;      %s"
+"${c1}                    0M.                 .:o.    %s"
+"${c1}                    ;Wd                         %s"
+"${c1}                     ;XO,                       %s"
+"${c1}                       ,d0Odlc;,..              %s"
+"${c1}                           ..',;:cdOOd::,.      %s"
+"${c1}                                    .:d;.':;.   %s"
+"${c1}                                       'd,  .'  %s"
+"${c1}                                         ;l   ..%s"
+"${c1}                                          .o    %s"
+"${c1}                                            c   %s"
+"${c1}                                            .'  %s"
+"${c1}                                             .  %s")
+		;;
+
+		"NixOS")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'blue')
+				c2=$(getColor 'light blue')
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="45"
+			fulloutput=(
+"${c1}          ::::.    ${c2}':::::     ::::'          %s"
+"${c1}          ':::::    ${c2}':::::.  ::::'           %s"
+"${c1}            :::::     ${c2}'::::.:::::            %s"
+"${c1}      .......:::::..... ${c2}::::::::             %s"
+"${c1}     ::::::::::::::::::. ${c2}::::::    ${c1}::::.     %s"
+"${c1}    ::::::::::::::::::::: ${c2}:::::.  ${c1}.::::'     %s"
+"${c2}           .....           ::::' ${c1}:::::'      %s"
+"${c2}          :::::            '::' ${c1}:::::'       %s"
+"${c2} ........:::::               ' ${c1}:::::::::::.  %s"
+"${c2}:::::::::::::                 ${c1}:::::::::::::  %s"
+"${c2} ::::::::::: ${c1}..              :::::           %s"
+"${c2}     .::::: ${c1}.:::            :::::            %s"
+"${c2}    .:::::  ${c1}:::::          '''''    ${c2}.....    %s"
+"${c2}    :::::   ${c1}':::::.  ${c2}......:::::::::::::'    %s"
+"${c2}     :::     ${c1}::::::. ${c2}':::::::::::::::::'     %s"
+"${c1}            .:::::::: ${c2}'::::::::::            %s"
+"${c1}           .::::''::::.     ${c2}'::::.           %s"
+"${c1}          .::::'   ::::.     ${c2}'::::.          %s"
+"${c1}         .::::      ::::      ${c2}'::::.         %s")
+		;;
+
+
+		"Ubuntu")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'white') # White
+				c2=$(getColor 'light red') # Light Red
+				c3=$(getColor 'yellow') # Bold Yellow
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; c3="${my_lcolor}"; fi
+			startline="0"
+			logowidth="38"
+			fulloutput=(
+"${c2}                          ./+o+-      %s"
+"${c1}                  yyyyy- ${c2}-yyyyyy+     %s"
+"${c1}               ${c1}://+//////${c2}-yyyyyyo     %s"
+"${c3}           .++ ${c1}.:/++++++/-${c2}.+sss/\`     %s"
+"${c3}         .:++o:  ${c1}/++++++++/:--:/-     %s"
+"${c3}        o:+o+:++.${c1}\`..\`\`\`.-/oo+++++/    %s"
+"${c3}       .:+o:+o/.${c1}          \`+sssoo+/   %s"
+"${c1}  .++/+:${c3}+oo+o:\`${c1}             /sssooo.  %s"
+"${c1} /+++//+:${c3}\`oo+o${c1}               /::--:.  %s"
+"${c1} \+/+o+++${c3}\`o++o${c2}               ++////.  %s"
+"${c1}  .++.o+${c3}++oo+:\`${c2}             /dddhhh.  %s"
+"${c3}       .+.o+oo:.${c2}          \`oddhhhh+   %s"
+"${c3}        \+.++o+o\`${c2}\`-\`\`\`\`.:ohdhhhhh+    %s"
+"${c3}         \`:o+++ ${c2}\`ohhhhhhhhyo++os:     %s"
+"${c3}           .o:${c2}\`.syhhhhhhh/${c3}.oo++o\`     %s"
+"${c2}               /osyyyyyyo${c3}++ooo+++/    %s"
+"${c2}                   \`\`\`\`\` ${c3}+oo+++o\:    %s"
+"${c3}                          \`oo++.      %s")
+		;;
+
+		"KDE neon")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light green') # Bold Green
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; fi
+			startline="0"
+			logowidth="43"
+			fulloutput=(
+"${c1}              \`..---+/---..\`               %s"
+"${c1}          \`---.\`\`   \`\`   \`.---.\`           %s"
+"${c1}       .--.\`        \`\`        \`-:-.        %s"
+"${c1}     \`:/:     \`.----//----.\`     :/-       %s"
+"${c1}    .:.    \`---\`          \`--.\`    .:\`     %s"
+"${c1}   .:\`   \`--\`                .:-    \`:.    %s"
+"${c1}  \`/    \`:.      \`.-::-.\`      -:\`   \`/\`   %s"
+"${c1}  /.    /.     \`:++++++++:\`     .:    .:   %s"
+"${c1} \`/    .:     \`+++++++++++/      /\`   \`+\`  %s"
+"${c1} /+\`   --     .++++++++++++\`     :.   .+:  %s"
+"${c1} \`/    .:     \`+++++++++++/      /\`   \`+\`  %s"
+"${c1}  /\`    /.     \`:++++++++:\`     .:    .:   %s"
+"${c1}  ./    \`:.      \`.:::-.\`      -:\`   \`/\`   %s"
+"${c1}   .:\`   \`--\`                .:-    \`:.    %s"
+"${c1}    .:.    \`---\`          \`--.\`    .:\`     %s"
+"${c1}     \`:/:     \`.----//----.\`     :/-       %s"
+"${c1}       .-:.\`        \`\`        \`-:-.        %s"
+"${c1}          \`---.\`\`   \`\`   \`.---.\`           %s"
+"${c1}              \`..---+/---..\`               %s")
+		;;
+
+		"Debian")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'white') # White
+				c2=$(getColor 'light red') # Light Red
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="32"
+			fulloutput=(
+"${c1}         _,met\$\$\$\$\$gg.          %s"
+"${c1}      ,g\$\$\$\$\$\$\$\$\$\$\$\$\$\$\$P.       %s"
+"${c1}    ,g\$\$P\"\"       \"\"\"Y\$\$.\".     %s"
+"${c1}   ,\$\$P'              \`\$\$\$.     %s"
+"${c1}  ',\$\$P       ,ggs.     \`\$\$b:   %s"
+"${c1}  \`d\$\$'     ,\$P\"\'   ${c2}.${c1}    \$\$\$    %s"
+"${c1}   \$\$P      d\$\'     ${c2},${c1}    \$\$P    %s"
+"${c1}   \$\$:      \$\$.   ${c2}-${c1}    ,d\$\$'    %s"
+"${c1}   \$\$\;      Y\$b._   _,d\$P'     %s"
+"${c1}   Y\$\$.    ${c2}\`.${c1}\`\"Y\$\$\$\$P\"'         %s"
+"${c1}   \`\$\$b      ${c2}\"-.__              %s"
+"${c1}    \`Y\$\$                        %s"
+"${c1}     \`Y\$\$.                      %s"
+"${c1}       \`\$\$b.                    %s"
+"${c1}         \`Y\$\$b.                 %s"
+"${c1}            \`\"Y\$b._             %s"
+"${c1}                \`\"\"\"\"           %s"
+"${c1}                                %s")
+		;;
+
+		"Raspbian")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light green') # Light Green
+				c2=$(getColor 'light red') # Light Red
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="32"
+			fulloutput=(
+"${c1}    .',;:cc;,'.    .,;::c:,,.   %s"
+"${c1}   ,ooolcloooo:  'oooooccloo:   %s"
+"${c1}   .looooc;;:ol  :oc;;:ooooo'   %s"
+"${c1}     ;oooooo:      ,ooooooc.    %s"
+"${c1}       .,:;'.       .;:;'.      %s"
+"${c2}       .dQ. .d0Q0Q0. '0Q.       %s"
+"${c2}     .0Q0'   'Q0Q0Q'  'Q0Q.     %s"
+"${c2}     ''  .odo.    .odo.  ''     %s"
+"${c2}    .  .0Q0Q0Q'  .0Q0Q0Q.  .    %s"
+"${c2}  ,0Q .0Q0Q0Q0Q  'Q0Q0Q0b. 0Q.  %s"
+"${c2}  :Q0  Q0Q0Q0Q    'Q0Q0Q0  Q0'  %s"
+"${c2}  '0    '0Q0' .0Q0. '0'    'Q'  %s"
+"${c2}    .oo.     .0Q0Q0.    .oo.    %s"
+"${c2}    'Q0Q0.  '0Q0Q0Q0. .Q0Q0b    %s"
+"${c2}     'Q0Q0.  '0Q0Q0' .d0Q0Q'    %s"
+"${c2}      'Q0Q'    ..    '0Q.'      %s"
+"${c2}            .0Q0Q0Q.            %s"
+"${c2}             '0Q0Q'             %s")
+		;;
+
+
+		"Gentoo")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'white') # White
+				c2=$(getColor 'light purple') # Light Purple
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="37"
+			fulloutput=(
+"${c2}         -/oyddmdhs+:.               %s"
+"${c2}     -o${c1}dNMMMMMMMMNNmhy+${c2}-\`            %s"
+"${c2}   -y${c1}NMMMMMMMMMMMNNNmmdhy${c2}+-          %s"
+"${c2} \`o${c1}mMMMMMMMMMMMMNmdmmmmddhhy${c2}/\`       %s"
+"${c2} om${c1}MMMMMMMMMMMN${c2}hhyyyo${c1}hmdddhhhd${c2}o\`     %s"
+"${c2}.y${c1}dMMMMMMMMMMd${c2}hs++so/s${c1}mdddhhhhdm${c2}+\`   %s"
+"${c2} oy${c1}hdmNMMMMMMMN${c2}dyooy${c1}dmddddhhhhyhN${c2}d.  %s"
+"${c2}  :o${c1}yhhdNNMMMMMMMNNNmmdddhhhhhyym${c2}Mh  %s"
+"${c2}    .:${c1}+sydNMMMMMNNNmmmdddhhhhhhmM${c2}my  %s"
+"${c2}       /m${c1}MMMMMMNNNmmmdddhhhhhmMNh${c2}s:  %s"
+"${c2}    \`o${c1}NMMMMMMMNNNmmmddddhhdmMNhs${c2}+\`   %s"
+"${c2}  \`s${c1}NMMMMMMMMNNNmmmdddddmNMmhs${c2}/.     %s"
+"${c2} /N${c1}MMMMMMMMNNNNmmmdddmNMNdso${c2}:\`       %s"
+"${c2}+M${c1}MMMMMMNNNNNmmmmdmNMNdso${c2}/-          %s"
+"${c2}yM${c1}MNNNNNNNmmmmmNNMmhs+/${c2}-\`            %s"
+"${c2}/h${c1}MMNNNNNNNNMNdhs++/${c2}-\`               %s"
+"${c2}\`/${c1}ohdmmddhys+++/:${c2}.\`                  %s"
+"${c2}  \`-//////:--.                       %s")
+		;;
+
+		"Fedora")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light blue') # Light Blue
+				c2=$(getColor 'white') # White
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="38"
+			fulloutput=(
+"${c1}             .',;::::;,'.		 %s"
+"${c1}         .';:cccccccccccc:;,.        	 %s"
+"${c1}      .;cccccccccccccccccccccc;.     	 %s"
+"${c1}    .:cccccccccccccccccccccccccc:.   	 %s"
+"${c1}  .;ccccccccccccc;${c2}.:dddl:.${c1};ccccccc;.     %s"
+"${c1} .:ccccccccccccc;${c2}OWMKOOXMWd${c1};ccccccc:.    %s"
+"${c1}.:ccccccccccccc;${c2}KMMc${c1};cc;${c2}xMMc${c1};ccccccc:.   %s"
+"${c1},cccccccccccccc;${c2}MMM.${c1};cc;${c2};WW:${c1};cccccccc,   %s"
+"${c1}:cccccccccccccc;${c2}MMM.${c1};cccccccccccccccc:   %s"
+"${c1}:ccccccc;${c2}oxOOOo${c1};${c2}MMM0OOk.${c1};cccccccccccc:   %s"
+"${c1}cccccc;${c2}0MMKxdd:${c1};${c2}MMMkddc.${c1};cccccccccccc;   %s"
+"${c1}ccccc;${c2}XM0'${c1};cccc;${c2}MMM.${c1};cccccccccccccccc'   %s"
+"${c1}ccccc;${c2}MMo${c1};ccccc;${c2}MMW.${c1};ccccccccccccccc;    %s"
+"${c1}ccccc;${c2}0MNc.${c1}ccc${c2}.xMMd${c1};ccccccccccccccc;     %s"
+"${c1}cccccc;${c2}dNMWXXXWM0:${c1};cccccccccccccc:,      %s"
+"${c1}cccccccc;${c2}.:odl:.${c1};cccccccccccccc:,.       %s"
+"${c1}:cccccccccccccccccccccccccccc:'.         %s"
+"${c1}.:cccccccccccccccccccccc:;,..      %s"
+"${c1}  '::cccccccccccccc::;,.		 %s"
+"${c1}					 %s")
+		;;
+
+
+		"Arch Linux"|"Arch Linux 32")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'light cyan') # Light
+				c2=$(getColor 'cyan') # Dark
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="1"
+			logowidth="38"
+			fulloutput=(
+"${c1}                   -\`                 "
+"${c1}                  .o+\`                %s"
+"${c1}                 \`ooo/                %s"
+"${c1}                \`+oooo:               %s"
+"${c1}               \`+oooooo:              %s"
+"${c1}               -+oooooo+:             %s"
+"${c1}             \`/:-:++oooo+:            %s"
+"${c1}            \`/++++/+++++++:           %s"
+"${c1}           \`/++++++++++++++:          %s"
+"${c1}          \`/+++o${c2}oooooooo${c1}oooo/\`        %s"
+"${c2}         ${c1}./${c2}ooosssso++osssssso${c1}+\`       %s"
+"${c2}        .oossssso-\`\`\`\`/ossssss+\`      %s"
+"${c2}       -osssssso.      :ssssssso.     %s"
+"${c2}      :osssssss/        osssso+++.    %s"
+"${c2}     /ossssssss/        +ssssooo/-    %s"
+"${c2}   \`/ossssso+/:-        -:/+osssso+-  %s"
+"${c2}  \`+sso+:-\`                 \`.-/+oso: %s"
+"${c2} \`++:.                           \`-/+/%s"
+"${c2} .\`                                 \`/%s")
+		;;
+
+		"Mint")
+			if [[ "$no_color" != "1" ]]; then
+				c1=$(getColor 'white') # White
+				c2=$(getColor 'light green') # Bold Green
+			fi
+			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
+			startline="0"
+			logowidth="38"
+			fulloutput=(
+"${c2}                                      %s"
+"${c2} MMMMMMMMMMMMMMMMMMMMMMMMMmds+.       %s"
+"${c2} MMm----::-://////////////oymNMd+\`    %s"
+"${c2} MMd      ${c1}/++                ${c2}-sNMd:   %s"
+"${c2} MMNso/\`  ${c1}dMM    \`.::-. .-::.\` ${c2}.hMN:  %s"
+"${c2} ddddMMh  ${c1}dMM   :hNMNMNhNMNMNh: ${c2}\`NMm  %s"
+"${c2}     NMm  ${c1}dMM  .NMN/-+MMM+-/NMN\` ${c2}dMM  %s"
+"${c2}     NMm  ${c1}dMM  -MMm  \`MMM   dMM. ${c2}dMM  %s"
+"${c2}     NMm  ${c1}dMM  -MMm  \`MMM   dMM. ${c2}dMM  %s"
+"${c2}     NMm  ${c1}dMM  .mmd  \`mmm   yMM. ${c2}dMM  %s"
+"${c2}     NMm  ${c1}dMM\`  ..\`   ...   ydm. ${c2}dMM  %s"
+"${c2}     hMM- ${c1}+MMd/-------...-:sdds  ${c2}dMM  %s"
+"${c2}     -NMm- ${c1}:hNMNNNmdddddddddy/\`  ${c2}dMM  %s"
+"${c2}      -dMNs-${c1}\`\`-::::-------.\`\`    ${c2}dMM  %s"
+"${c2}       \`/dMNmy+/:-------------:/yMMM  %s"
+"${c2}          ./ydNMMMMMMMMMMMMMMMMMMMMM  %s"
+"${c2}             \.MMMMMMMMMMMMMMMMMMM    %s"
+"${c2}                                      %s")
+		;;
+
